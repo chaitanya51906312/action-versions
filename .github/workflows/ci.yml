@@ -32,6 +32,7 @@ jobs:
       
       - name: Test zipball
         run: ./script/test.sh ./_layout/action-versions.zip
+        echo
 
       - name: Release
         if: github.event_name == 'workflow_dispatch'
